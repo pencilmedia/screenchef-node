@@ -47,7 +47,7 @@ module.exports = function(grunt) {
             titleForTable: 'Table',
 
             // Prototype Pages
-            titleExplorer: 'Price Explorer',
+            titleApp: 'Paradata SaaS',
 
             // Use them as e.g. @@context
             context: optionsContext,  
@@ -82,13 +82,13 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {                         // Dictionary of files
-           'app/_/css/styleguide.css': 'app/_/scss/styleguide.scss',  // 'destination': 'source'
-           'app/_/css/theme.css': 'app/_/scss/theme.scss'
+           'app/assets/css/styleguide.css': 'app/assets/scss/styleguide.scss',  // 'destination': 'source'
+           'app/assets/css/theme.css': 'app/assets/scss/theme.scss'
         },
         dist: {
           files: {
-             'app/_/css/styleguide.css': 'app/_/scss/styleguide.scss',  // 'destination': 'source'
-             'app/_/css/theme.css': 'app/_/scss/theme.scss'
+             'app/assets/css/styleguide.css': 'app/assets/scss/styleguide.scss',  // 'destination': 'source'
+             'app/assets/css/theme.css': 'app/assets/scss/theme.scss'
           }
         }
       }

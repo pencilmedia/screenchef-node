@@ -9,7 +9,7 @@ The navigation item is selected by matching the 'data-id' and the "pageID" varia
        <li><h2 class="tree-toggler"><i class="fa fa-caret-down"></i>Overview</h2>
            <ul class="nav nav-pills nav-stacked tree">
 			       <li><a href="/" data-id="overview">Overview</a></li>
-             <li><a href="@@context/explorer" data-id="pa-explorer"><strike>@@titleExplorer</strike></a></li>
+             <li><a href="@@context/saas.html" data-id="pa-app">@@titleApp</a></li>
            </ul>
        </li>
        <li><h2 class="tree-toggler"><i class="fa fa-caret-down"></i>Foundations</h2>
@@ -25,7 +25,7 @@ The navigation item is selected by matching the 'data-id' and the "pageID" varia
            <ul class="nav nav-pills nav-stacked tree">
               <li><a href="@@context/components/breadcrumb/" data-id="component-breadcrumb">@@titleBreadcrumb</a></li>
               <li><a href="@@context/components/buttons/" data-id="buttons">@@titleButton</a></li>
-              <li><a href="@@context/components/dialogs/" data-id="dialogs"><strike>@@titleDialog</strike></a></li>
+              <!-- <li><a href="@@context/components/dialogs/" data-id="dialogs"><strike>@@titleDialog</strike></a></li> -->
               <li><a href="@@context/components/forms/" data-id="forms">@@titleForm</a></li>
 <!--               <li><a href="@@context/components/tabs/" data-id="tabs">@@titleTab</a></li> -->
               <li><a href="@@context/components/tooltips/" data-id="tooltips">@@titleTooltip</a></li>
@@ -36,6 +36,7 @@ The navigation item is selected by matching the 'data-id' and the "pageID" varia
                   <li><a href="@@context/components/date_single/" data-id="date-single">@@titleDateSingle</a></li>
                   <li><a href="@@context/components/long_list_single/" data-id="long-list-single">@@titleLongListSingle</a></li>
                   <li><a href="@@context/components/long_list_multi/" data-id="long-list-multi">@@titleLongListMulti</a></li>
+                  <li><a href="@@context/components/select_angular/" data-id="angular-select">@@titleSelectAngular</a></li>
                   <li><a href="@@context/components/money/" data-id="money-input">@@titleMoneyInput</a></li>
                   <li><a href="@@context/components/quantity/" data-id="quantity-input">@@titleQuantityInput</a></li>
                 </ul>

@@ -2,6 +2,7 @@
 // -----------------------------------------------------*/
 /* BEGIN: variables.scss - for theme.scss
 // -----------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 @uploadGray :			#eee;
 /* BEGIN: Include Mixins
 // -----------------------------------------------------*/
@@ -462,8 +463,12 @@ body.app-layout main .workarea-container .tab-content > .tab-pane.pane-open .wor
 
 /* BEGIN: typography.scss
 // -----------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
 h1 {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 h2 {

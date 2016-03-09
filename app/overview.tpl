@@ -32,6 +32,7 @@
         <li><a href="@@context/components/date_single/" data-id="date-single">@@titleDateSingle</a></li>
         <li><a href="@@context/components/long_list_single/" data-id="long-list-single">@@titleLongListSingle</a></li>
         <li><a href="@@context/components/long_list_multi/" data-id="long-list-multi">@@titleLongListMulti</a></li>
+        <li><a href="@@context/components/select_angular/" data-id="select-angular">@@titleSelectAngular</a></li>
         <li><a href="@@context/components/money/" data-id="money-input">@@titleMoneyInput</a></li>
         <li><a href="@@context/components/quantity/" data-id="quantity-input">@@titleQuantityInput</a></li>
       </ul>
@@ -48,7 +49,7 @@
 <div class="col-sm-12">
   <h2>Prototypes</h2>
   <ul class="nav nav-stacked">
-    <li><a href="@@context/explorer/">@@titleExplorer</a></li>
+    <li><a href="@@context/saas.html">@@titleApp</a></li>
   </ul>
 </div>
 </div>

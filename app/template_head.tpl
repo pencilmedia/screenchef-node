@@ -61,7 +61,7 @@
     <link rel="stylesheet" href="@@context/assets/bower_components/highlightjs/styles/monokai_sublime.css">
 
 
-    <title>Paradata Style Guide</title>
+    <title>Paradata Style Guide - Marq I</title>
   </head>
 
   <!-- Page <BODY>

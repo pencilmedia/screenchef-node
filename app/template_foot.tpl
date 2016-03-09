@@ -45,6 +45,9 @@
     <!-- Component Library (Style Guide) Specific JS -->
     <script src="@@context/assets/js/styleguide.js"></script>
 
+    <!-- Angular Library-->
+    <script src="@@context/assets/bower_components/angular/angular.min.js"></script>
+
 
     <!-- HighLight Plugin for code snippest -->
     <script src="@@context/assets/bower_components/highlightjs/highlight.pack.js"></script>
@@ -56,6 +59,25 @@
         $(item).html(htmlOfElement);
         hljs.highlightBlock(item);
       });
+    </script>
+    
+    <!-- Angular module setup -->
+    <script>
+      var angApp = angular.module('myApp',[]);
+        angApp.controller('appCtrl', ['$scope', function($scope){
+          $scope.collection = [
+            {name:'Scott'},
+            {name:'Steve'},
+            {name:'Nick'},
+            {name:'Asha'},
+            {name:'Vishak'},
+            {name:'Joel'},
+            {name:'Ralph'},
+            {name:'Marq'},
+            {name:'Michele'},
+            {name:'Kiavash'}
+          ];
+        }]);
     </script>
 
     <!-- FOR DEV PURPOSES: LiveReload -->
