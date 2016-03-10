@@ -30,7 +30,7 @@ module.exports = function(grunt) {
             // Components
             titleBreadcrumb: 'Breadcrumb',
             titleButton: 'Buttons',
-            // titleDialog: 'Dialogs',
+            titleDialog: 'Dialogs',
             titleForm: 'Forms',
             titleDateRange: 'Date, Date Range',
             titleDateSingle: 'Date, Single Date',
@@ -79,7 +79,10 @@ module.exports = function(grunt) {
     sass: {                              // Task
       dist: {                            // Target
         options: {                       // Target options
-          style: 'expanded'
+          update: true, // Update changes made only
+          noCache: true,
+          sourcemap: 'none',
+          style: 'nested' // we don't want to compress it
         },
         files: {                         // Dictionary of files
            'app/assets/css/styleguide.css': 'app/assets/scss/styleguide.scss',  // 'destination': 'source'

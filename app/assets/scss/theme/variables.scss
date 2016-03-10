@@ -1,17 +1,25 @@
 /* BEGIN: variables.scss - for theme.scss
 // -----------------------------------------------------*/
 
-// Base Colors
+// Primary Color Palette
 // -----------------------------------------------------
 
+$main: 				#576472;
+$main-tint: 			#d2d7dd;
+$main-shade: 			#ebf2f9;
+$main-blue: 			#0387AB;
+$highlight-blue: 		#72c9ca;
+$highlight-green: 		#7ed321;
+
+$charcoal: 			#333;
+$gray:				#ccc;
 $white:				#fff;
 $black:				#000;
-$gray:				#ccc;
-$dark:				#343838;
 
-$green:				#7ED321;
+$green:				#67ab49;
 
-$orange:				#f0ad4e;
+$orange:				#f79232;
+$cool-orange:			#f0ad4e;
 
 $red:				#E50015;
 $redLight:			lighten($red, 25%);
@@ -29,36 +37,29 @@ $grayLightest:       	lighten($gray, 34%);
 $grayDark:           	darken($gray, 20%);
 $grayDarker:         	darken($gray, 30%);
 $grayDarkest:        	darken($gray, 40%);
-@uploadGray:			#eee;
+
+$cool-silver:			#f9f9f9;
 
 // Blues
-$blue:        			#D2E0F1;
-$blueLight:   			lighten($blue, 2%);
-$blueLighter: 			lighten($blue, 4%);
-$blueLightest:			lighten($blue, 6%);
+$blue:        			#0387ab;
+$blueLight:   			lighten($blue, 10%);
+$blueLighter: 			lighten($blue, 20%);
+$blueLightest:			lighten($blue, 30%);
 $blueDark:    			darken($blue, 5%);
 $blueDarker:  			darken($blue, 15%);
 $blueDarkest: 			darken($blue, 30%);
+
 $navyBlue:			#2D4F62;
 $brightBlue: 		     #4A90E2;
 
-// Primary Color Palette
-// -----------------------------------------------------
-
-$main-shade: #1D444A;
-$main: #1E626D;
-$contextual: #288D9F;
-$action: #52B8CD;
-$main-tint: #E1EAEB;
-$light-tint: #F9FCFD;
-
+$cool-blue: 		     #84bbc6;
 
 // Typography
 // -----------------------------------------------------
 
-$baseFontSize:          12px;
-$baseFontFamily:        'Helvetica Neue', Helvetica, Arial, sans-serif;
-$baseLineHeight:        28px;
+$baseFontSize:           13px;
+$baseFontFamily:         "Helvetica Neue", Helvetica, Arial, sans-serif;
+$btnFontFamily:		"HelveticaNeueMedium","HelveticaNeue-Medium", "Helvetica Neue Medium", Helvetica, Arial, sans-serif;
 
 //** Background color for `<body>`.
 $bodyBG:               $white;

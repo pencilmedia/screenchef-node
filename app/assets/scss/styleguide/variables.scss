@@ -20,7 +20,7 @@ $grayLightest:       	lighten($gray, 38%);
 $grayDark:           	darken($gray, 20%);
 $grayDarker:         	darken($gray, 30%);
 $grayDarkest:        	darken($gray, 40%);
-@uploadGray:			#eee;
+$uploadGray:			#eee;
 
 // Blues
 $blue:        			#D2E0F1;
@@ -64,7 +64,7 @@ $linkHoverColor:      darken($linkColor, 15%);
 $linkHoverDecoration: underline;
 
 
-
+$pageMargin: 20px;
 
 
 

@@ -5,69 +5,55 @@
 // BUTTON VARIABLES
 
 // btn-default
-$btnDefault: #D8D8D8;
-$btnDefaultBorder: lighten($btnDefault, 5%);
-$btnDefaultOutline: darken($btnDefault, 10%);
+$btnDefault: $cool-silver;
+$btnDefaultBorder: darken($btnDefault, 5%);
 	//hover
-$btnDefaultHvr: darken($btnDefault, 5%);
-$btnDefaultBorderHvr: $btnDefault;
-$btnDefaultOutlineHvr: darken($btnDefault, 15%);
+$btnDefaultHvr: darken($btnDefault, 10%);
+$btnDefaultBorderHvr: darken($btnDefault, 20%);
 
 // btn-primary
-$btnPrimary: #5C9FAA;
-$btnPrimaryBorder: lighten($btnPrimary, 10%);
-$btnPrimaryOutline: darken($btnPrimary, 10%);
+$btnPrimary: $main-blue;
+$btnPrimaryBorder: darken($btnPrimary, 5%);
 	//hover
 $btnPrimaryHvr: darken($btnPrimary, 10%);
-$btnPrimaryBorderHvr: $btnPrimary;
-$btnPrimaryOutlineHvr: darken($btnPrimary, 20%);
+$btnPrimaryBorderHvr: darken($btnPrimary, 20%);
 
 // btn-success
 $btnSuccess: $green;
-$btnSuccessBorder: lighten($btnSuccess, 15%);
-$btnSuccessOutline: darken($btnSuccess, 10%);
+$btnSuccessBorder: darken($btnSuccess, 5%);
 	//hover
-$btnSuccessHvr: darken($btnSuccess,10%);
-$btnSuccessBorderHvr: $btnSuccess;
-$btnSuccessOutlineHvr: darken($btnSuccess, 5%);
+$btnSuccessHvr: darken($btnSuccess, 10%);
+$btnSuccessBorderHvr: darken($btnSuccess, 20%);
 
 // btn-info
-$btnInfo: $main;
-$btnInfoBorder: lighten($btnInfo, 15%);
-$btnInfoOutline: darken($btnInfo, 10%);
+$btnInfo: $cool-blue;
+$btnInfoBorder: darken($btnInfo, 5%);
 	//hover
 $btnInfoHvr: darken($btnInfo, 10%);
-$btnInfoBorderHvr: $btnInfo;
-$btnInfoOutlineHvr: darken($btnInfo, 5%);
+$btnInfoBorderHvr: darken($btnInfo, 20%);
 
 // btn-warning
 $btnWarning: $orange;
-$btnWarningBorder: lighten($btnWarning, 15%);
-$btnWarningOutline: darken($btnWarning, 10%);
+$btnWarningBorder: darken($btnWarning, 5%);
 	//hover
-$btnWarningHvr: darken($btnWarning,10%);
-$btnWarningBorderHvr: $btnWarning;
-$btnWarningOutlineHvr: darken($btnWarning, 5%);
+$btnWarningHvr: darken($btnWarning, 10%);
+$btnWarningBorderHvr: darken($btnWarning, 20%);
 
 // btn-danger
 $btnDanger: $red;
-$btnDangerBorder: lighten($btnDanger, 15%);
-$btnDangerOutline: darken($btnDanger, 10%);
+$btnDangerBorder: darken($btnDanger, 5%);
 	//hover
-$btnDangerHvr: darken($btnDanger,10%);
-$btnDangerBorderHvr: $btnDanger;
-$btnDangerOutlineHvr: darken($btnDanger, 5%);
+$btnDangerHvr: darken($btnDanger, 10%);
+$btnDangerBorderHvr: darken($btnDanger, 20%);
 
 
 // BUTTONS
 // -----------------------------------------------------
 
 .btn {
-	@include border-radius(0);
-	@include no-box-shadow();
-	@include transition(.5s);
-	font-family: $baseFontFamily;
-	letter-spacing: 1px;
+	// @include border-radius(7px);
+	// @include no-box-shadow();
+	// @include transition(.5s);
 	.fa {
 		margin-right: 5px;
 		min-width: 12px;
@@ -79,60 +65,38 @@ $btnDangerOutlineHvr: darken($btnDanger, 5%);
 		}
 	}
 	&.btn-link {
-		color: $brightBlue;
-		text-decoration: none;
+		color: $blue;
+		text-decoration: underline;
 		.fa {
 			margin-right: 5px;
 			min-width: 12px;
 		}
 		&:focus, &:hover {
 			color: $navyBlue;
-			background: $blueLightest;
+			background: $cool-silver;
 		}
 	}
-	// Hover
-	&:hover {
-		background-position:0 -15px;
-		text-decoration:none;
-		@include transition(.3s);
-	}
-	// Disabled
-	&.disabled, &.btn[disabled], &[disabled] {
-		background-image:none;
-		-webkit-box-shadow:none;
-		-moz-box-shadow:none;
-		box-shadow:none;
-		color: $grayDark;
-		cursor: default;
-		filter: alpha(opacity=5);
-		font-weight: normal;
-		letter-spacing: 0;
-		opacity: 0.5;
-		text-shadow: none;
-	}
+	// BUTTON COLORS:
 	// Default Buttons
 	&.btn-default {
 		background-color: $btnDefault;
 		border-color: $btnDefaultBorder;
-		outline: 1px solid $btnDefaultOutline;
 		&:hover,
 		&:active, &:active{
 			background-color: $btnDefaultHvr;
 			border-color: $btnDefaultBorderHvr;
-			outline-color: $btnDefaultOutlineHvr;
 		}
 	}
 	// Primary Buttons
 	&.btn-primary {
+		font-family: $btnFontFamily;
 		background-color: $btnPrimary;
 		border-color: $btnPrimaryBorder;
-		outline: 1px solid $btnPrimaryOutline;
 		&:hover,
 		&:active, &.active {
 			background-color: $btnPrimaryHvr;
 			border-color: $btnPrimaryBorderHvr;
-			outline-color: $btnPrimaryOutlineHvr;
-		}
+		} 
 		// Disabled
 		&.disabled, &.btn[disabled], &[disabled] {
 			color: $grayLightest;
@@ -142,73 +106,41 @@ $btnDangerOutlineHvr: darken($btnDanger, 5%);
 	&.btn-success {
 		background-color: $btnSuccess;
 		border-color: $btnSuccessBorder;
-		outline: 1px solid $btnSuccessOutline;
 		&:hover,
 		&:active, &.active {
 			background-color: $btnSuccessHvr;
 			border-color: $btnSuccessBorderHvr;
-			outline-color: $btnSuccessOutlineHvr;
-		}
-		// Disabled
-		&.disabled, &.btn[disabled], &[disabled] {
-			color: $grayLightest;
 		}
 	}
 	// Info Buttons
 	&.btn-info {
 		background-color: $btnInfo;
 		border-color: $btnInfoBorder;
-		outline: 1px solid $btnInfoOutline;
 		&:hover,
 		&:active, &.active {
 			background-color: $btnInfoHvr;
 			border-color: $btnInfoBorderHvr;
-			outline-color: $btnInfoOutlineHvr;
-		}
-		// Disabled
-		&.disabled, &.btn[disabled], &[disabled] {
-			color: $grayLightest;
 		}
 	}
 	// Warning Buttons
 	&.btn-warning {
 		background-color: $btnWarning;
 		border-color: $btnWarningBorder;
-		outline: 1px solid $btnWarningOutline;
 		&:hover,
 		&:active, &.active {
 			background-color: $btnWarningHvr;
 			border-color: $btnWarningBorderHvr;
-			outline-color: $btnWarningOutlineHvr;
-		}
-		// Disabled
-		&.disabled, &.btn[disabled], &[disabled] {
-			color: $grayLightest;
 		}
 	}
 	// Danger Buttons
 	&.btn-danger {
 		background-color: $btnDanger;
 		border-color: $btnDangerBorder;
-		outline: 1px solid $btnDangerOutline;
 		&:hover,
 		&:active, &.active {
 			background-color: $btnDangerHvr;
 			border-color: $btnDangerBorderHvr;
-			outline-color: $btnDangerOutlineHvr;
 		}
-		// Disabled
-		&.disabled, &.btn[disabled], &[disabled] {
-			color: $grayLightest;
-		}
-	}
-	// Shared Styles
-	&.btn-primary, &.btn-primary:hover, 
-	&.btn-warning, 
-	&.btn-warning:hover, 
-	&.btn-danger, 
-	&.btn-danger:hover {
-		color: $white;
 	}
 	&.btn-icon {
 		.fa {
@@ -224,16 +156,6 @@ $btnDangerOutlineHvr: darken($btnDanger, 5%);
 	}
 }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
-	border-radius: 0;
-}
-
-.input-group > .input-group-btn {
-	.btn {
-		height: $input-height-base;
-		outline: 0;
-	}
-}
 
 
 

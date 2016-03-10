@@ -1,11 +1,11 @@
 <div class="row">
   <div class="col-xs-8">
-    <img src="@@context/assets/img/paradata-logo-3color.png" alt="Paradata-Logo" height='150px' width='400px'>
-    <br>
+    <img src="@@context/assets/img/paradata-logo-tagline.png" alt="Paradata-Logo" class="company-logo">
   </div>
 </div>
-<!-- <h1>Overview</h1>
-<p>Prototypes for creating Vendavo apps</p> -->
+
+<!-- <h1>Design Libarary</h1> -->
+
 <div class="col-sm-4">
   <h2>Foundations</h2>
   <ul class="nav nav-stacked">
