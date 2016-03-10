@@ -1,8 +1,8 @@
 {
   "name": "prototype_components",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "authors": [
-    "Jan Rudovsky <jrudovsky@vendavo.com>, Ralph Garcia <rgarcia@vendavo.com>"
+    "Marq Short <marq@paradata.io>, Ralph Garcia <ralph@paradata.io"
   ],
   "moduleType": [
     "amd"
