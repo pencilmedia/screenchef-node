@@ -120,7 +120,6 @@ $btnDangerBorderHvr: darken($btnDanger, 20%);
 		&:active, &.active {
 			background-color: $btnInfoHvr;
 			border-color: $btnInfoBorderHvr;
-			outline-color: $btnInfoOutlineHvr;
 		}
 		// Disabled
 		&.disabled, &.btn[disabled], &[disabled] {
