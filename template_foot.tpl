@@ -65,6 +65,7 @@
     <script>
       var angApp = angular.module('myApp',[]);
         angApp.controller('appCtrl', ['$scope', function($scope){
+            console.log("ctrl");
           $scope.collection = [
             {name:'Scott'},
             {name:'Steve'},

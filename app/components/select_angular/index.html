@@ -167,7 +167,7 @@
      placeholder: 'Select a Name...',
      formatNoMatches: function() { return 'No Matches Found for your Search'; }
     });  
-    angular.module('myApp').controller('taggingCtrl', function($scope){
+    angApp.controller('taggingCtrl', function($scope, $window){
       $('#select').select2({
         tags: $scope.collection.map(function(personObject){ return personObject.name; })
       });

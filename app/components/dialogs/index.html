@@ -26,7 +26,6 @@
 <h3>Example Modal Dialog</h3>
 <button class="btn btn-primary" type="button" data-id="trigger-dialog">Launch a Modal Dialog</button>
 
-
   <div class="modal fade in paradata-modal proto-example-dialog" tabindex="-1" role="dialog" style="display: block;">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -45,8 +44,72 @@
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 
-
-
+<section ng-app="myApp" ng-controller="ModalCtrl as modalForm">
+  <h2>Modal Dialog Wizard</h2>
+  <p>We are using Angular to create a dialog wizard that will present different prompts to the user depending on their input</p>
+  <button class="btn btn-primary" type="button" ng-click="modalForm.toggleModal()">Launch a Modal Wizard</button>
+  <modal-dialog>
+    <div class="modal-body">
+      <div ng-show="modalForm.modalData.modalPage == 1">
+        <fieldset>
+          <legend>Page 1</legend>
+          <label for="pathA">Path A</label>
+          <input type="radio" ng-model="modalForm.modalData.dialogPath" value="pathA" id="pathA"> <br/>
+          <label for="pathB">Path B</label>
+          <input type="radio" ng-model="modalForm.modalData.dialogPath" value="pathB" id="pathB">
+        </fieldset>
+      </div>
+      <div ng-show="modalForm.modalData.modalPage > 1 && modalForm.modalData.dialogPath=='pathA'">
+        <div ng-controller="pathACtrl as planA">
+          <div ng-show="modalForm.modalData.modalPage == 2">
+            <h1>Path A - Page 2</h1>
+            <label for="testFieldA">Data from Controller</label>
+            <input type="text" ng-model="planA.testFieldA">
+            <br/>
+            <label for="inputNew">Add Data to Parent Controller</label>
+            <input type="text" ng-model="modalForm.modalData.formData.newField_PathA" placeholder="Add Form Data">
+          </div>
+          <div ng-show="modalForm.modalData.modalPage == 3">
+            <h1>Path A - Page 3</h1>
+            <label for="testFieldB">Field B</label>
+            <input type="text" ng-model="planA.testFieldB">
+            <br/>
+          </div>
+        </div>
+      </div>
+      <div ng-show="modalForm.modalData.modalPage > 1 && modalForm.modalData.dialogPath == 'pathB'">
+        <div ng-controller="pathBCtrl as planB">
+          <div ng-show="modalForm.modalData.modalPage == 2">
+            <h1>Path B - Page 2</h1>
+            <label for="testFieldA">Data from Controller</label>
+            <input type="text" ng-model="planB.testFieldC">
+            <br/>
+            <label for="inputNew">Add Data to Parent Controller</label>
+            <input type="text" ng-model="modalForm.modalData.formData.newField_PathB" placeholder="Add Form Data">
+          </div>
+          <div ng-show="modalForm.modalData.modalPage == 3">
+            <h1>Path B - Page 3</h1>
+            <label for="testFieldB">Field B</label>
+            <input type="text" ng-model="planB.testFieldD">
+            <br/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <div class="colonnade dual">
+        <div class="lt-column">
+          <button type="button" class="btn btn-secondary" ng-show="modalForm.modalData.modalPage > 1" ng-click="modalForm.lastPage()"><i class="fa fa-chevron-left"> Back</i></button>
+        </div>
+        <div class="rt-column">
+          <button class="btn btn-secondary" type="button" ng-click="modalForm.toggleModal()">Cancel</button>
+          <button type="button" class="btn btn-success" ng-hide="modalForm.modalData.numModalPages == modalForm.modalData.modalPage" ng-disabled='!modalForm.modalData.dialogPath' ng-click="modalForm.nextPage()">Next</button>
+          <button type="button" class="btn btn-success" ng-show="modalForm.modalData.numModalPages == modalForm.modalData.modalPage" ng-click="modalForm.submitForm()">Submit</button>
+        </div>
+      </div>
+    </div>
+  </modal-dialog>
+</section>
 
 
 
@@ -56,3 +119,55 @@
 <!-- Page Bottom
 ================================================== -->
 @@include('./../../template_foot.tpl')
+<script>
+  angApp.directive('modalDialog', function(){
+    return {
+      restrict: 'E',
+      transclude: true,
+      template: '<div class="modal fade in paradata-modal proto-example-dialog" ng-show="modalForm.modalData.modalShown">' + 
+                  '<div class="paradata-modal-dialog">' +
+                    '<div class="modal-content">' +
+                      '<div class="modal-header">' +
+                        '<h2 class="modal-title">Modal Header</h2>' +
+                      '</div>' +
+                      '<div class="modal-footer" ng-transclude></div>' +
+                    '</div>' +
+                '</div>'
+    };
+  });
+
+angApp.controller('ModalCtrl', ['$scope', '$window', function($scope, $window) {
+  var vmModal = this;
+  vmModal.modalData = {};
+  vmModal.modalData.modalShown = false;
+  vmModal.modalData.numModalPages = 3;
+  vmModal.toggleModal = function() {
+    console.log('toggled');
+    vmModal.modalData.formData = {};
+    vmModal.modalData.modalPage = 1;
+    vmModal.modalData.dialogPath = 'pathA';
+    vmModal.modalData.modalShown = !vmModal.modalData.modalShown;
+  };
+  vmModal.nextPage = function(){ 
+    vmModal.modalData.modalPage++;
+  };
+  vmModal.lastPage = function(){ 
+    vmModal.modalData.modalPage--;
+  };
+  vmModal.submitForm = function(){
+    $window.alert('All data added to parent $scope can be retrieved and submitted here');
+  };
+}]);
+
+angApp.controller('pathACtrl',['$scope', function($scope){
+  var vmPathA = this;
+  vmPathA.testFieldA = "ABC";
+  vmPathA.testFieldB = "DEF";
+}]);
+
+angApp.controller('pathBCtrl', ['$scope', function($scope){
+  var vmPathB = this;
+  vmPathB.testFieldC = "123";
+  vmPathB.testFieldD = "456"
+}]);
+</script>
