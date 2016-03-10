@@ -17,23 +17,16 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.2",
-    "modernizer": "~2.8.2",
-    "fastclick": "~1.0.6",
+    "bootstrap": "*",
+    "modernizer": "*",
+    "fastclick": "*",
     "highlightjs": "~8.4.0",
-    "fontawesome": "~4.3.0",
-    "icomoon": "~0.0.3",
+    "fontawesome": "*",
     "animate.css": "latest",
     "select2-ng": "~3.5.2",
-    "jquery.truncator": "*",
-    "eonasdan-bootstrap-datetimepicker": "~4.7.14",
-    "bootstrap-datepicker": "~1.4.0",
-    "bootstrap3-dialog": "~1.34.2"
+    "jquery.truncator": "*"
   },
   "resolutions": {
-    "bootstrap": "~3.3.2"
-  },
-  "devDependencies": {
-    "bootstrap-toggle": "~2.2.0"
+    "bootstrap": "*"
   }
 }
