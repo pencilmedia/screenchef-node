@@ -130,7 +130,6 @@ $btnDangerBorderHvr: darken($btnDanger, 20%);
 	&.btn-warning {
 		background-color: $btnWarning;
 		border-color: $btnWarningBorder;
-		outline: 1px solid $btnWarningOutline;
 		&:hover,
 		&:active, &.active {
 			background-color: $btnWarningHvr;
