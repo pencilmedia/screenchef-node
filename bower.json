@@ -20,10 +20,10 @@
     "bootstrap": "*",
     "modernizer": "*",
     "fastclick": "*",
-    "highlightjs": "~8.4.0",
+    "highlightjs": "*",
     "fontawesome": "*",
     "animate.css": "latest",
-    "select2-ng": "~3.5.2",
+    "select2-ng": "*",
     "jquery.truncator": "*"
   },
   "resolutions": {

@@ -43,8 +43,6 @@
     <link rel="stylesheet" type="text/css" href="@@context/assets/bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="@@context/assets/bower_components/select2-ng/select2.css">
     <link rel="stylesheet" type="text/css" href="@@context/assets/bower_components/select2-ng/select2-bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="@@context/assets/bower_components/bootstrap3-dialog/dist/css/bootstrap-dialog.min.css">
-    <link rel="stylesheet" type="text/css" href="@@context/assets/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
 
     <!-- Style Guide Styles
     ================================================== -->
