@@ -1,207 +1,46 @@
-/* BEGIN: styleguide.scss
-// -----------------------------------------------------*/
-/* BEGIN: variables.scss - for styleguide.scss
-// -----------------------------------------------------*/
-/* BEGIN: Include Mixins
-// -----------------------------------------------------*/
-/* BEGIN: mixin border-radius.scss
-// -----------------------------------------------------*/
-/* BEGIN: border-radius.scss
-// -----------------------------------------------------*/
-/* BEGIN: box-shadow.scss
-// -----------------------------------------------------*/
-/* BEGIN: flex-box.scss
-// -----------------------------------------------------*/
-/* BEGIN: layout.scss
-// -----------------------------------------------------*/
-html.style-guide,
-body.style-guide {
-  height: 100%;
-  overflow-x: hidden;
-  /* Prevent scroll on narrow devices */ }
+/*
+Error: Invalid CSS after "...leguide/layout"": expected "{", was ";"
+        on line 8 of app/assets/scss/styleguide.scss
 
-.company-logo {
-  height: 60px;
-  margin: 30px 0 20px 0; }
+3: 
+4: // Global Includes
+5: @import "styleguide/variables";
+6: @import "styleguide/mixins";
+7: <<<<<<< HEAD
+8: @import "styleguide/layout";
+9: =======
+10: 
+11: 
+12: @import "styleguide/typography";
+13: 
 
-.nav-stacked li h4 {
-  font-size: 100%;
-  font-weight: normal;
-  color: #666666;
-  padding-left: 15px; }
-.nav-stacked li ul {
-  list-style: none;
-  margin-left: 15px; }
-
-#styleguideNav .nav-list li .subtree {
-  padding-left: 0; }
-  #styleguideNav .nav-list li .subtree .fa {
-    color: #333333;
-    width: 15px;
-    margin-right: 5px;
-    text-align: center; }
-#styleguideNav .nav-list li ul {
-  list-style: none;
-  margin: 0 0 0 15px;
-  padding: 0; }
-
-@media screen and (max-width: 767px) {
-  .style-guide .sidebar-offcanvas {
-    position: absolute;
-    top: 0;
-    width: 50%;
-    /* 6 columns */ }
-  .style-guide .row-offcanvas {
-    position: relative;
-    -o-transition: all .25s ease-out;
-    -webkit-transition: all .25s ease-out;
-    transition: all .25s ease-out; }
-  .style-guide .row-offcanvas-right {
-    height: 100%;
-    right: 0; }
-  .style-guide .row-offcanvas-left {
-    left: 0; }
-  .style-guide .row-offcanvas-right
-  .sidebar-offcanvas {
-    height: 100%;
-    right: -50%;
-    /* 6 columns */ }
-  .style-guide .row-offcanvas-left
-  .sidebar-offcanvas {
-    left: -50%;
-    /* 6 columns */ }
-  .style-guide .row-offcanvas-right.active {
-    right: 50%;
-    /* 6 columns */ }
-  .style-guide .row-offcanvas-left.active {
-    left: 50%;
-    /* 6 columns */ }
-  .style-guide .row-offcanvas-right
-  .sidebar-offcanvas {
-    border-left: 1px solid #e0e0e0;
-    background: #fafafa; } }
-.style-guide .sidebar-offcanvas h1 {
-  font-size: 140%; }
-  .style-guide .sidebar-offcanvas h1 .fa {
-    margin-right: 5px; }
-.style-guide .sidebar-offcanvas nav h2 {
-  margin-top: 30px;
-  font-size: 100%; }
-  .style-guide .sidebar-offcanvas nav h2 .fa {
-    width: 15px;
-    margin-right: 5px;
-    text-align: center; }
-.style-guide .sidebar-offcanvas nav .nav > li > a {
-  padding-left: 20px; }
-
-.style-guide > .container {
-  height: 100%; }
-  .style-guide > .container .sg-content {
-    padding-bottom: 50px; }
-    .style-guide > .container .sg-content > h2 {
-      margin-top: 40px; }
-    .style-guide > .container .sg-content > h3,
-    .style-guide > .container .sg-content > h4 {
-      margin-top: 30px; }
-    .style-guide > .container .sg-content p + h3,
-    .style-guide > .container .sg-content p + h4 {
-      margin-top: 20px; }
-    .style-guide > .container .sg-content hgroup {
-      margin-bottom: 40px; }
-      .style-guide > .container .sg-content hgroup > h1 .fa {
-        margin-right: 10px; }
-      .style-guide > .container .sg-content hgroup > h4 {
-        color: #4A90E2; }
-      .style-guide > .container .sg-content hgroup > h2 {
-        margin-top: 40px; }
-      .style-guide > .container .sg-content hgroup > h5 {
-        font-weight: normal; }
-    .style-guide > .container .sg-content .sg-page-nav {
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      margin: 15px 0 20px 0; }
-      .style-guide > .container .sg-content .sg-page-nav > div {
-        -webkit-box-flex: 1 50%;
-        -moz-box-flex: 1 50%;
-        -webkit-flex: 1 50%;
-        -ms-flex: 1 50%;
-        flex: 1 50%;
-        -webkit-box-ordinal-group: 2;
-        -moz-box-ordinal-group: 2;
-        -ms-flex-order: 2;
-        -webkit-order: 2;
-        order: 2; }
-        .style-guide > .container .sg-content .sg-page-nav > div h6 {
-          margin-top: 0; }
-        .style-guide > .container .sg-content .sg-page-nav > div:last-child {
-          position: relative;
-          text-align: center; }
-          .style-guide > .container .sg-content .sg-page-nav > div:last-child .btn {
-            position: absolute;
-            top: 30%;
-            left: 0;
-            width: 100%; }
-    .style-guide > .container .sg-content > .divider {
-      margin: 30px 0 0 0;
-      border-top-color: #c7c7c7; }
-    .style-guide > .container .sg-content .pull-right {
-      margin: 10px 0 0 0; }
-      .style-guide > .container .sg-content .pull-right .btn-link .fa {
-        font-size: 150%; }
-    .style-guide > .container .sg-content .color-boxes {
-      overflow: hidden;
-      padding: 0; }
-      .style-guide > .container .sg-content .color-boxes li {
-        border: 1px solid #999;
-        float: left;
-        height: 40px;
-        line-height: 40px;
-        list-style: none;
-        margin-right: 5px;
-        padding: 0 10px;
-        text-align: center;
-        width: auto; }
-        .style-guide > .container .sg-content .color-boxes li.white {
-          background-color: #fff; }
-        .style-guide > .container .sg-content .color-boxes li.black {
-          background-color: #000;
-          color: #fff; }
-        .style-guide > .container .sg-content .color-boxes li.gray {
-          background-color: #999; }
-        .style-guide > .container .sg-content .color-boxes li.dark {
-          background-color: #343838;
-          color: #fff; }
-        .style-guide > .container .sg-content .color-boxes li.main-shade {
-          background-color: #1D444A;
-          color: #fff; }
-        .style-guide > .container .sg-content .color-boxes li.main {
-          background-color: #1E626D;
-          color: #fff; }
-        .style-guide > .container .sg-content .color-boxes li.contextual {
-          background-color: #288D9F; }
-        .style-guide > .container .sg-content .color-boxes li.action {
-          background-color: #52B8CD; }
-        .style-guide > .container .sg-content .color-boxes li.main-tint {
-          background-color: #E1EAEB; }
-        .style-guide > .container .sg-content .color-boxes li.light-tint {
-          background-color: #F9FCFD; }
-    .style-guide > .container .sg-content .panel-default {
-      margin: 40px 0; }
-      .style-guide > .container .sg-content .panel-default .panel-body > h4 {
-        margin-top: 30px; }
-        .style-guide > .container .sg-content .panel-default .panel-body > h4:first-child {
-          margin-top: 10px; }
-    .style-guide > .container .sg-content h2 + .panel-default {
-      margin-top: 0; }
-
-.proto-example-dialog {
-  position: relative;
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
-  z-index: 1;
-  display: block; }
+Backtrace:
+app/assets/scss/styleguide.scss:8
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1161:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1097:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1092:in `tok!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:637:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:631:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:656:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:42:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:403:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:278:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...leguide/layout\"\": expected \"{\", was \";\"\A         on line 8 of app/assets/scss/styleguide.scss\A \A 3: \A 4: // Global Includes\A 5: @import \"styleguide/variables\";\A 6: @import \"styleguide/mixins\";\A 7: <<<<<<< HEAD\A 8: @import \"styleguide/layout\";\A 9: =======\A 10: \A 11: \A 12: @import \"styleguide/typography\";\A 13: "; }
