@@ -22,10 +22,8 @@
 
     <!-- Plug-Ins -->
     <script src="@@context/assets/bower_components/fastclick/lib/fastclick.js"></script>
-    <script src="@@context/assets/bower_components/select2-ng/select2.min.js"></script>
+    <script src="@@context/assets/bower_components/select2/dist/js/select2.min.js"></script>
     <script src="@@context/assets/bower_components/jquery.truncator/jquery.truncator.js"></script>
-    <script src="@@context/assets/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-    <script src="http://code.highcharts.com/highcharts.js"></script>
 
     <!-- Polyfills - create support for unsupported browsers
     ... Will be added here ... -->
@@ -34,7 +32,7 @@
     <script src="@@context/assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Plugins  -->
-    <script src="@@context/assets/bower_components/bootstrap3-dialog/dist/js/bootstrap-dialog.min.js"></script>
+    <!-- plugins go here -->
 
     <!-- Vendavo App JS -->
     <script src="@@context/assets/js/app.js"></script>

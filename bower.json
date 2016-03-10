@@ -23,8 +23,11 @@
     "highlightjs": "*",
     "fontawesome": "*",
     "animate.css": "latest",
-    "select2-ng": "*",
-    "jquery.truncator": "*"
+    "jquery.truncator": "*",
+    "angular": "^1.5.0",
+    "ui-select": "angular-ui-select#^0.14.9",
+    "select2": "^4.0.2",
+    "jquery": "^2.2.1"
   },
   "resolutions": {
     "bootstrap": "*"

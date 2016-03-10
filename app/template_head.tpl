@@ -34,15 +34,14 @@
     <!-- Font Library
     ================================================== -->
     <link rel="stylesheet" type="text/css" href="@@context/assets/bower_components/fontawesome/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="@@context/assets/bower_components/icomoon/dist/css/style.css">
 
     <!-- Plug-Ins Styles
     ================================================== -->
+    <link rel="stylesheet" type="text/css" href="@@context/assets/bower_components/select2/dist/css/select2.min.css">
+
     <!-- Animate.css
     ================================================== -->
     <link rel="stylesheet" type="text/css" href="@@context/assets/bower_components/animate.css/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="@@context/assets/bower_components/select2-ng/select2.css">
-    <link rel="stylesheet" type="text/css" href="@@context/assets/bower_components/select2-ng/select2-bootstrap.css">
 
     <!-- Style Guide Styles
     ================================================== -->
@@ -51,12 +50,12 @@
     <!-- Theme Styles
     ================================================== -->
     <link rel="stylesheet" type="text/css" href="@@context/assets/css/theme.css">
-
-    <!-- Modernizr -->
-    <script type="text/javascript" src="@@context/assets/bower_components/modernizer/modernizr.js"></script>
     
     <!-- Code Snippet CSS -->
     <link rel="stylesheet" href="@@context/assets/bower_components/highlightjs/styles/monokai_sublime.css">
+
+    <!-- Modernizr -->
+    <script type="text/javascript" src="@@context/assets/bower_components/modernizer/modernizr.js"></script>
 
 
     <title>Paradata Style Guide</title>
