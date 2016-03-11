@@ -47,6 +47,10 @@
     ================================================== -->
     <link rel="stylesheet" type="text/css" href="@@context/assets/css/styleguide.css">
 
+    <!-- OLD YETI Styles
+    ================================================== -->
+    <!-- <link rel="stylesheet" type="text/css" href="@@context/assets/css/_original/paradata.min.css"> -->
+
     <!-- Theme Styles
     ================================================== -->
     <link rel="stylesheet" type="text/css" href="@@context/assets/css/theme.css">

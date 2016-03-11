@@ -51,7 +51,11 @@ $btnDangerBorderHvr: darken($btnDanger, 20%);
 // -----------------------------------------------------
 
 .btn {
-	// @include border-radius(7px);
+	// Begin: Yeti Overrides (old app styles)
+	color: $white;
+	// End: Yeti Overrides
+
+	@include border-radius(5px);
 	// @include no-box-shadow();
 	// @include transition(.5s);
 	.fa {
@@ -79,6 +83,10 @@ $btnDangerBorderHvr: darken($btnDanger, 20%);
 	// BUTTON COLORS:
 	// Default Buttons
 	&.btn-default {
+		// Begin: Yeti Overrides (old app styles)
+		color: $charcoal;
+		// End: Yeti Overrides
+
 		background-color: $btnDefault;
 		border-color: $btnDefaultBorder;
 		&:hover,
@@ -89,6 +97,9 @@ $btnDangerBorderHvr: darken($btnDanger, 20%);
 	}
 	// Primary Buttons
 	&.btn-primary {
+		// Begin: Yeti Overrides (old app styles)
+		color: $white;
+		// End: Yeti Overrides
 		font-family: $btnFontFamily;
 		background-color: $btnPrimary;
 		border-color: $btnPrimaryBorder;

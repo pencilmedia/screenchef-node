@@ -34,10 +34,10 @@
     <!-- Plugins  -->
     <!-- plugins go here -->
 
-    <!-- Vendavo App JS -->
+    <!-- App JS -->
     <script src="@@context/assets/js/app.js"></script>
 
-    <!-- Vendavo Components JS  -->
+    <!-- Components JS  -->
     <script src="@@context/assets/js/components.js"></script>
 
     <!-- Component Library (Style Guide) Specific JS -->

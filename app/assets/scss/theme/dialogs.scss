@@ -2,24 +2,9 @@
 // -----------------------------------------------------*/
 
 // Dialogs
-.bootstrap-dialog {
-	&.type-primary {
-		.modal-header {
-			background: $grayLighter;
-			border-bottom-color: $grayLight;
-			&.bootstrap-dialog-draggable {
-				cursor: move;
-			}
-		}
-		.modal-content {
-			// Mixin
-			// @include border-radius(0);
-		}
-
-	}
-	.bootstrap-dialog-title {
-		color: $grayDarkest;
+.paradata-modal {
+	h4 {
+		font-size: 22px;
 	}
 }
-
 
