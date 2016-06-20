@@ -21,33 +21,9 @@ module.exports = function(grunt) {
             // GLOBAL VARIABLES
 
             // Foundations
-            titleEntities: 'HTML Entities',
-            titleTypography: 'Typography',
-            titleColors: 'Colors',
-            titleIconography: 'Iconography',
-            titleAnimation: 'Animation',
-
-            // Components
-            titleBreadcrumb: 'Breadcrumb',
-            titleButton: 'Buttons',
-            titleDialog: 'Dialogs',
-            titleForm: 'Forms',
-            titleDateRange: 'Date, Date Range',
-            titleDateSingle: 'Date, Single Date',
-            titleLongListSingle: 'List, Long Single Value',
-            titleLongListMulti: 'List, Long Multi Value',
-            titleSelectAngular: 'Select2 Box with Angular',
-            titleAngularDialog: 'Dialog Modal using Angular',
-            titleMoneyInput: 'Money Input',
-            titleQuantityInput: 'Quantity Input',
-            titleTab: 'Tabs',
-            titleTooltip: 'Tooltips',
-
-            // Patterns
-            titleForTable: 'Table',
-
-            // Prototype Pages
-            titleApp: 'Paradata SaaS',
+            titleHmpg: 'screenchef.com',
+            companyTitle: 'Ralph Adrian Garcia',
+            companyDescription: 'Interaction Designer and Prototyper',
 
             // Use them as e.g. @@context
             context: optionsContext,  
@@ -81,17 +57,15 @@ module.exports = function(grunt) {
         options: {                       // Target options
           update: true, // Update changes made only
           noCache: true,
-          sourcemap: 'none',
+          sourcemap: 'auto',
           style: 'nested' // we don't want to compress it
         },
         files: {                         // Dictionary of files
-           'app/assets/css/styleguide.css': 'app/assets/scss/styleguide.scss',  // 'destination': 'source'
-           'app/assets/css/theme.css': 'app/assets/scss/theme.scss'
+           'app/assets/css/main.css': 'app/assets/scss/main.scss'  // 'destination': 'source'
         },
         dist: {
           files: {
-             'app/assets/css/styleguide.css': 'app/assets/scss/styleguide.scss',  // 'destination': 'source'
-             'app/assets/css/theme.css': 'app/assets/scss/theme.scss'
+             'app/assets/css/main.css': 'app/assets/scss/main.scss'  // 'destination': 'source'
           }
         }
       }
@@ -117,28 +91,7 @@ module.exports = function(grunt) {
         options: {
           port: 9908,
           base: './dist/app',
-          hostname: 'localhost',
-          // middleware: function(connect, options, middlewares) {
-
-          // // CORS
-          // middlewares = [];
-
-          // middlewares.push(function(req, res, next) {
-          //   res.setHeader('Access-Control-Allow-Origin', '*');
-          //   res.setHeader('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-          //   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-          //   next();
-          // });
-
-          // middlewares.push(
-          //   connect.static(options.base)
-          // );
-          // middlewares.push(
-          //   connect.directory(options.base)
-          // );
-
-          // return middlewares;
-          // }
+          hostname: 'localhost'
         }
       }
     }

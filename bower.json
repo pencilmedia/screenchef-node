@@ -1,8 +1,8 @@
 {
-  "name": "prototype_components",
+  "name": "screenchef.com",
   "version": "1.0.0",
   "authors": [
-    "Marq Short <marq@paradata.io>, Ralph Garcia <ralph@paradata.io"
+    "Ralph A. Garcia <ralph@paradata.io"
   ],
   "moduleType": [
     "amd"
@@ -17,19 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "*",
-    "modernizer": "*",
     "fastclick": "*",
-    "highlightjs": "*",
-    "fontawesome": "*",
-    "animate.css": "latest",
-    "jquery.truncator": "*",
-    "angular": "^1.5.0",
-    "ui-select": "angular-ui-select#^0.14.9",
-    "select2": "^4.0.2",
-    "jquery": "^2.2.1"
-  },
-  "resolutions": {
-    "bootstrap": "*"
+    "animate.css": "latest"
   }
 }
